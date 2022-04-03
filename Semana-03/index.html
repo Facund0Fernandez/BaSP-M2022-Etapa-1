@@ -3,6 +3,8 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/style.css">
         <title>Trackgenix</title>
@@ -18,14 +20,16 @@
         <aside>
 
             <div>
-                <ul>
-                    <li> <a href="#">Home</a> </li>
-                    <li> <a href="#">Sign Up</a> </li>
-                    <li> <a href="#">Log In</a> </li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">Sign Up</a> </li>
+                        <li> <a href="#">Log In</a> </li>
+                    </ul>
+                </nav>
             </div>
 
-            <div>
+            <div class="contact">
                 <h2>Contact</h2>
 
                     <p>
@@ -35,7 +39,7 @@
                     </p>
             </div>
 
-            <div>
+            <div class="information">
                 <ul>
                     <li> <img src="Images/email.png" alt="Email"> <a href="#">information@untitled.tld</a> </li>
                     <li> <img src="Images/phone.png" alt="Phone"> <a href="#">Tel.: (000) 000-0000</a> </li>
@@ -45,34 +49,83 @@
 
         </aside>
 
-        <section class="welcome">
+        <main>
 
-            <h2>Welcome to Trackgenix.</h2>
+            <section class="welcome">
 
-            <h3>The new work system</h3>
+                <h2>Welcome to Trackgenix.</h2>
 
-            <div>
-                <img src="Images/imagen-de-recursos-humanos.png" alt="Recuros Humanos">
+                <h3>The new work system</h3>
 
-                <p>
-                    Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
-                    Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
-                    Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam.
-                    Lorem ipsum dolor sit nullam.
-                </p>
-            </div>
+                <div>
+                    <img src="Images/imagen-de-recursos-humanos.png" alt="Recuros Humanos">
 
-        </section>
+                    <p>
+                        Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
+                        Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
+                        Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam.
+                        Lorem ipsum dolor sit nullam.
+                    </p>
+                </div>
 
-        <section class="features">
+            </section>
 
-            <h2>Features</h2>
-            
-            <article>
-                <div class="funcionalities">
-                    <h3>RECORD OF HOURS</h3>
+            <section class="features">
 
-                    <img src="Images/imagen-reloj.webp" alt="Reloj">
+                <h2>Features</h2>
+                
+                <article>
+                    <div id="record">
+                        <h3>RECORD OF HOURS</h3>
+
+                        <img src="Images/imagen-reloj.webp" alt="Reloj">
+
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+
+                    <div id="resource">
+                        <h3>RESOURCE MANAGEMENT</h3>
+
+                        <img src="Images/gestion-de-recursos-imagen.jpg" alt="Gestion de recursos">
+
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+
+                    <div id="reports">
+                        <h3>REPORTS</h3>
+
+                        <img src="Images/imagen-reporte.png" alt="Reporte">
+
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+
+                    <div id="roles">
+                        <h3>MULTIPLE ROLES</h3>
+
+                        <img src="Images/imagen-multiples-roles.webp" alt="Multiples roles">
+
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                </article>
+
+            </section>
+
+            <section>
+
+                <div>
+                    <h3>PRODUCTIVITY BOOSTER</h3>
 
                     <p>
                         Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
@@ -80,10 +133,8 @@
                     </p>
                 </div>
 
-                <div class="funcionalities">
-                    <h3>RESOURCE MANAGEMENT</h3>
-
-                    <img src="Images/gestion-de-recursos-imagen.jpg" alt="Gestion de recursos">
+                <div>
+                    <h3>WORK TRACEABILITY</h3>
 
                     <p>
                         Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
@@ -91,10 +142,8 @@
                     </p>
                 </div>
 
-                <div class="funcionalities">
-                    <h3>REPORTS</h3>
-
-                    <img src="Images/imagen-reporte.png" alt="Reporte">
+                <div>
+                    <h3>LEADERSHIP AND TEAM MANAGEMENT</h3>
 
                     <p>
                         Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
@@ -102,187 +151,143 @@
                     </p>
                 </div>
 
-                <div class="funcionalities">
-                    <h3>MULTIPLE ROLES</h3>
-
-                    <img src="Images/imagen-multiples-roles.webp" alt="Multiples roles">
+                <div>
+                    <h3>DECISION MAKING</h3>
 
                     <p>
                         Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
                         Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
                     </p>
                 </div>
-            </article>
 
-        </section>
+            </section>
 
-        <section>
+            <section>
 
-            <div>
-                <h3>PRODUCTIVITY BOOSTER</h3>
+                <h2>Information</h2>
+
+                <form>
+
+                    <div>
+                        <label>NAME & LAST NAME</label>
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        <label>EMAIL</label>
+                        <input type="text">
+                    </div>
+
+                    <div>
+                        <h3>CONTACT</h3>
+
+                        <input type="checkbox">
+                        <label>Human Resources</label>
+
+                        <input type="checkbox">
+                        <label>Sistems</label>
+
+                        <input type="checkbox">
+                        <label>Commercialization</label>
+                    </div>
+
+                    <div>
+                        <label>MESSAGE</label>
+                        <textarea name="message"></textarea>
+                    </div>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+
+            </section>
+
+            <section>
+
+                <h2>OUR HISTORY</h2>
 
                 <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                    Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                    Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                    Integer ac pellentesque praesent. Lorem ipsum dolor.
+                    Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
                 </p>
-            </div>
-
-            <div>
-                <h3>WORK TRACEABILITY</h3>
 
                 <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                    Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                    Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                    Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                    Integer ac pellentesque praesent. 
                 </p>
-            </div>
-
-            <div>
-                <h3>LEADERSHIP AND TEAM MANAGEMENT</h3>
 
                 <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                    Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                    Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                    Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                    Integer ac pellentesque praesent. 
                 </p>
-            </div>
-
-            <div>
-                <h3>DECISION MAKING</h3>
 
                 <p>
-                    Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                    Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                    Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                    Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis sagittis eget. tempus euismod.
+                    Vestibulum ante ipsum primis in faucibus vestibulum.
+                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
+                    Integer ac pellentesque praesent. 
                 </p>
-            </div>
 
-        </section>
+            </section>
 
-        <section>
-
-            <h2>Information</h2>
-
-            <form>
+            <section>
 
                 <div>
-                    <label>NAME & LAST NAME</label>
-                    <input type="text">
+                    <h3>PRODUCTS</h3>
+
+                    <ul>
+                        <li> <a href="#">Funcionalities</a> </li>
+                        <li> <a href="#">Downloads</a> </li>
+                        <li> <a href="#">Integrations</a> </li>
+                        <li> <a href="#">Extras</a> </li>
+                    </ul>
                 </div>
 
                 <div>
-                    <label>EMAIL</label>
-                    <input type="text">
+                    <h3>COMPANY</h3>
+
+                    <ul>
+                        <li> <a href="#">About Us</a> </li>
+                        <li> <a href="#">Clients</a> </li>
+                        <li> <a href="#">Resources</a> </li>
+                        <li> <a href="#">Blog</a> </li>
+                    </ul>
                 </div>
 
                 <div>
-                    <h3>CONTACT</h3>
+                    <h3>SUPPORT</h3>
 
-                    <input type="checkbox">
-                    <label>Human Resources</label>
-
-                    <input type="checkbox">
-                    <label>Sistems</label>
-
-                    <input type="checkbox">
-                    <label>Commercialization</label>
+                    <ul>
+                        <li> <a href="#">Help</a> </li>
+                        <li> <a href="#">Tutorials</a> </li>
+                        <li> <a href="#">API</a> </li>
+                        <li> <a href="#">Contact</a> </li>
+                    </ul>
                 </div>
 
-                <div>
-                    <label>MESSAGE</label>
-                    <textarea name="message"></textarea>
-                </div>
+            </section>
 
-                <input type="submit" value="Submit">
+        </main>
 
-            </form>
-
-        </section>
-
-        <section>
-
-            <h2>OUR HISTORY</h2>
-
-            <p>
-                <b>
-                Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                Integer ac pellentesque praesent. Lorem ipsum dolor.
-                Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                </b> 
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                Integer ac pellentesque praesent. 
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                Integer ac pellentesque praesent. 
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis sagittis eget. tempus euismod.
-                Vestibulum ante ipsum primis in faucibus vestibulum.
-                Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.
-                Integer ac pellentesque praesent. 
-            </p>
-
-        </section>
-
-        <section>
-
-            <div>
-                <h3>PRODUCTS</h3>
-
-                <ul>
-                    <li> <a href="#">Funcionalities</a> </li>
-                    <li> <a href="#">Downloads</a> </li>
-                    <li> <a href="#">Integrations</a> </li>
-                    <li> <a href="#">Extras</a> </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>COMPANY</h3>
-
-                <ul>
-                    <li> <a href="#">About Us</a> </li>
-                    <li> <a href="#">Clients</a> </li>
-                    <li> <a href="#">Resources</a> </li>
-                    <li> <a href="#">Blog</a> </li>
-                </ul>
-            </div>
-
-            <div>
-                <h3>SUPPORT</h3>
-
-                <ul>
-                    <li> <a href="#">Help</a> </li>
-                    <li> <a href="#">Tutorials</a> </li>
-                    <li> <a href="#">API</a> </li>
-                    <li> <a href="#">Contact</a> </li>
-                </ul>
-            </div>
-
-        </section>
-
-       
         <footer>
             <p>Rosario, Santa Fe - Argentina</p> 
             <p>Copyright © 2022 Trackgenix SA. All rights reserved.</p>
