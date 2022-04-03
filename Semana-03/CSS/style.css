@@ -127,7 +127,7 @@ aside nav a {
     display: block;
     position: relative;
     bottom: 19px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -143,4 +143,63 @@ aside nav a {
     right: 88px;
     bottom: 22px;
 }
+
+/* main */
+
+main {
+    position: relative;
+    top: 102px;
+    left: 302px;
+}
+
+/* welcome section */
+
+.welcome h2 {
+    position: absolute;
+    width: 781px;
+    height: 85px;
+    left: 15px;
+    top: 125px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 84px;
+    color: #373867;
+}
+
+.welcome h3 {
+    position: absolute;
+    left: 15px;
+    top: 230px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #373867;
+}
+
+.welcome p {
+    position: absolute;
+    width: 484px;
+    height: 339px;
+    left: 26px;
+    top: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #373867;
+}
+
+.welcome img {  
+    position: absolute;
+    width: 680px;
+    height: 500px;
+    left: 529px;
+    top: 300px;
+}
+
 
