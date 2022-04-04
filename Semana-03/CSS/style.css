@@ -13,6 +13,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
     background-color: #AACE9B;
     height: 128px;
 }
@@ -161,6 +162,7 @@ main {
     position: absolute;
     left: 15px;
     top: 230px;
+    width: 352px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -237,7 +239,8 @@ main {
 #record h3 {
     position: absolute;
     left: 250px;
-    top:  1225px;
+    top: 1225px;
+    width: 270px;
 }
 
 #record p {
@@ -257,7 +260,8 @@ main {
 #resource h3 {
     position: absolute;
     left: 800px;
-    top:  1225px;
+    top: 1225px;
+    width: 370px;
 }
 
 #resource p {
@@ -276,8 +280,8 @@ main {
 
 #reports h3 {
     position: absolute;
-    left: 273px;
-    top:  1674px;
+    left: 300px;
+    top: 1674px;
 }
 
 #reports p {
@@ -296,8 +300,9 @@ main {
 
 #roles h3 {
     position: absolute;
-    left: 800px;
-    top:  1674px;
+    left: 838px;
+    top: 1674px;
+    width: 240px;
 }
 
 #roles p {
@@ -598,3 +603,79 @@ form .submit {
     top: 555px;
 }
 
+/* history section */
+
+#our-history h2 {
+position: absolute;
+width: 744px;
+height: 107px;
+left: 170px;
+top: 4230px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 87px;
+text-align: center;
+color: #373867;
+}
+
+#our-history .p1 {
+    position: absolute;
+    width: 1163px;
+    height: 147px;
+    left: 0px;
+    top: 4360px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #373867;
+}
+
+#our-history .p2 {
+    position: absolute;
+    width: 1015px;
+    height: 484px;
+    left: 90px;
+    top: 4550px;;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #373867;
+}
+
+#our-history .p3 {
+    position: absolute;
+    width: 1015px;
+    height: 484px;
+    left: 90px;
+    top: 4670px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #373867;;
+}
+
+#our-history .p4 {
+    position: absolute;
+    width: 1015px;
+    height: 484px;
+    left: 90px;
+    top: 4795px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #373867;
+}
