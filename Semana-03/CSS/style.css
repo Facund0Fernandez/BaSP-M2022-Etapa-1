@@ -534,6 +534,89 @@ form h3 {
     background-color: rgba(55, 56, 103, 0.4);
 }
 
+/* On mouse-over, add a grey background color */
+.container-hr:hover input ~ .checkmark {
+    background-color: gray;
+  }
+
+.container-s:hover input ~ .checkmark {
+    background-color: gray;
+  }
+
+.container-c:hover input ~ .checkmark {
+    background-color: gray;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container-hr input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  .container-s input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+
+  .container-c input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container-hr input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container-s input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container-c input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container-hr .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .container-s .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .container-c .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
 .container-hr {
     position: absolute;
     top: -180px;
@@ -696,11 +779,13 @@ color: #373867;
 }
 
 .order-list li {
-    position: absolute;
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
+    line-height: 28px;
+    list-style-type: disc;
     color: #373867;
 }
 
