@@ -679,3 +679,108 @@ color: #373867;
     text-align: center;
     color: #373867;
 }
+
+/* lists section */
+
+.order-list h3 {
+    position: absolute;
+    width: 196px;
+    height: 61px;
+    margin: 0px 150px 30px 150px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #AACE9B;
+}
+
+.order-list li {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #373867;
+}
+
+.order-list a {
+    text-decoration: none;
+}
+
+.products h3 {
+    position: absolute;
+    left: -30px;
+    top: 5237px;
+}
+
+.products ul {
+    position: absolute;
+    left: 142px;
+    top: 5305px;
+}
+
+.company h3 {
+    position: absolute;
+    left: 330px;
+    top: 5237px;
+}
+
+.company ul {
+    position: absolute;
+    left: 522px;
+    top: 5305px;
+}
+
+.support h3 {
+    position: absolute;
+    left: 730px;
+    top: 5237px;
+}
+
+.support ul {
+    position: absolute;
+    left: 932px;
+    top: 5305px;
+}
+
+/* footer */
+
+footer {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 153px;
+    left: 0px;
+    top: 5991px;
+    background-color: #AACE9B;
+}
+ .location {
+    position: absolute;
+    width: 330px;
+    height: 37px;
+    left: 670px;
+    top: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #373867;
+ }
+
+ .copyright {
+    position: absolute;
+    width: 428px;
+    height: 37px;
+    left: 640px;
+    top: 75px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #373867;
+ }
