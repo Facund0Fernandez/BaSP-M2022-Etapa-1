@@ -10,11 +10,11 @@ body {
 /* header */
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     background-color: #AACE9B;
     height: 128px;
-
 }
 
 h1 {
@@ -43,7 +43,6 @@ header p {
 /* aside */
 
 aside {
-    display: block;
     position: fixed;
     top: 128px;
     width: 204px;
@@ -56,7 +55,7 @@ aside {
 aside nav a {
     display: block;
     position: relative;
-    top: 248px;
+    top: 90px;
     width: 162px;
     height: 42px;
     margin: 0px 21px 35px 21px;
@@ -74,7 +73,7 @@ aside nav a {
 .contact {
     display: block;
     position: absolute;
-    top: 565px;
+    top: 330px;
 }
 
 .contact h2 {
@@ -107,24 +106,13 @@ aside nav a {
 .information {
     display: block;
     position: absolute;
-    top: 820px;
+    top: 560px;
     font-size: 12px;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-/*
-.information img {
-    width: 27px;
-    height: 27px;
-}
-*/
-
 .information a {
-    /*
-    width: 175px;
-    height: 32px;
-    */
     display: block;
     position: relative;
     bottom: 19px;
@@ -148,7 +136,7 @@ aside nav a {
 /* main */
 
 main {
-    position: relative;
+    position: absolute;
     top: 102px;
     left: 302px;
 }
@@ -411,8 +399,69 @@ main {
     color: #373867;
 }
 
-.field label {
+.name label {
     position: absolute;
+    width: 172px;
+    height: 32px;
+    left: 70px;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #373867;
+}
+
+.name input {
+    position: absolute;
+    width: 1011px;
+    height: 59px;
+    left: 70px;
+    top: 32px;
+    background-color: rgba(55, 56, 103, 0.4);
+    border-radius: 20px;
+}
+
+.email label {
+    position: absolute;
+    width: 61px;
+    height: 31px;
+    left: 70px;
+    top: 170px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #373867;
+}
+
+.email input {
+    position: absolute;
+    width: 1011px;
+    height: 59px;
+    left: 70px;
+    top: 200px;
+    background-color: rgba(55, 56, 103, 0.4);
+    border-radius: 20px;
+}
+
+form h3 {
+    position: absolute;
+    width: 97px;
+    height: 29px;
+    left: 70px;
+    top: -220px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #373867;
+}
+
+#contact label {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -420,3 +469,132 @@ main {
     line-height: 21px;
     color: #373867;
 }
+
+/* The container */
+.container-hr {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container-s {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container-c {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+/* Hide the browser's default checkbox */
+#contact input { 
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgba(55, 56, 103, 0.4);
+}
+
+.container-hr {
+    position: absolute;
+    top: -180px;
+    left: 65px;
+    width: 150px;
+}
+
+.container-s {
+    position: absolute;
+    top: -180px;
+    left: 450px;
+    width: 150px;
+}
+
+.container-c {
+    position: absolute;
+    top: -180px;
+    left: 800px;
+    width: 150px;
+}
+
+.message label {
+    position: absolute;
+    height: 32px;
+    left: 70px;
+    top: 470px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #373867;
+}
+
+.message textarea {
+    position: absolute;
+    width: 1011px;
+    height: 315px;
+    left: 70px;
+    top: 500px;
+    background: rgba(55, 56, 103, 0.4);
+    border-radius: 20px;
+}
+
+form .submit {
+    position: absolute;
+    width: 162px;
+    height: 42px;
+    top: 860px;
+    left: 929px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    color: #373867;
+    text-align: center;
+    text-decoration: none;
+    background-color: #AACE9B;
+}
+
+#contact {
+    display: block;
+    position: absolute;
+    top: 555px;
+}
+

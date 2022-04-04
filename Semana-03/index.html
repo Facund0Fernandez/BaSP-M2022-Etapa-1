@@ -170,35 +170,41 @@
 
                 <form>
 
-                    <div class="field">
+                    <div class="name">
                         <label>NAME & LAST NAME</label>
                         <input type="text">
                     </div>
 
-                    <div class="field">
+                    <div class="email">
                         <label>EMAIL</label>
                         <input type="text">
                     </div>
 
-                    <div class="field">
+                    <div id="contact">
                         <h3>CONTACT</h3>
 
-                        <input type="checkbox">
-                        <label>Human Resources</label>
+                        <label class="container-hr">Human Resources
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
 
-                        <input type="checkbox">
-                        <label>Sistems</label>
+                        <label class="container-s">Sistems
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
 
-                        <input type="checkbox">
-                        <label>Commercialization</label>
+                        <label class="container-c">Commercialization
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
 
-                    <div class="field">
+                    <div class="message">
                         <label>MESSAGE</label>
                         <textarea name="message"></textarea>
                     </div>
 
-                    <input type="submit" value="Submit">
+                    <input class="submit" type="submit" value="Submit">
 
                 </form>
 
