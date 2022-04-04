@@ -23,7 +23,10 @@ Within the system there are different roles with different functionalities. Thes
 * Admin: in charge of managing the different projects and everything that they imply.
 * Super Admin: manages the registration and cancellation of the Admins.
 
-## Weekly problem
+## Weekly problem 02
 
 This week we made the basic structure of the landing page (previously designed in [Figma](https://www.figma.com/file/VikOLkc7mTH1me1UFCZUw1/BaSP-2022-Trackgenix-Paloma?node-id=302%3A367)) in an HTML file.
 
+## Weekly problem 03
+
+This week's problem was styling the HTML file using CSS. For this we are guided by the style of the landing page made in Figma.
