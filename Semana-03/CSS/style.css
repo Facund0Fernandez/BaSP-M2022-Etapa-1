@@ -314,7 +314,7 @@ main {
 /* why use? section */
 
 .why-use article {
-    position: absolute;
+    position: relative;
     top: 2120px;
 }
 
@@ -335,7 +335,7 @@ main {
 .why-use p {
     width: 320px;
     height: 110px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -467,7 +467,7 @@ form h3 {
 }
 
 #contact label {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -549,15 +549,15 @@ form h3 {
   
   /* When the checkbox is checked, add a blue background */
   .container-hr input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #373867;
   }
 
   .container-s input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #373867;
   }
 
   .container-c input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #373867;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -869,3 +869,56 @@ footer {
     text-align: center;
     color: #373867;
  }
+ /* line */
+
+ .line-welcome {
+    position: absolute;
+    top: 1000px;
+    width: 1133px;
+    border-bottom: 10px solid #EBFAE3;
+ }
+
+ .line-features {
+    position: absolute;
+    top: 2048px;
+    width: 1133px;
+    border-bottom: 10px solid #EBFAE3;
+ }
+
+ .line-why-use {
+    position: absolute;
+    top: 3072px;
+    width: 1133px;
+    border-bottom: 10px solid #EBFAE3;
+ }
+
+ .line-information {
+    position: absolute;
+    top: 4150px;
+    width: 1133px;
+    border-bottom: 10px solid #EBFAE3;
+ }
+
+ .line-our-history {
+    position: absolute;
+    top: 5120px;
+    width: 1133px;
+    border-bottom: 10px solid #EBFAE3;
+ }
+
+ .line-sidebar-up {
+    position: relative;
+    width: 175px;
+    left: 27px;
+    top: 61px;
+    border: 1px solid #69A362;
+ }
+
+ .line-sidebar-down {
+    position: relative;
+    width: 175px;
+    left: 27px;
+    top: 70px;
+    border: 1px solid #69A362;
+ }
+
