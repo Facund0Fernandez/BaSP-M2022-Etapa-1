@@ -313,7 +313,7 @@ main {
 
 /* why use? section */
 
-.why-use article {
+.why-use {
     position: relative;
     top: 2120px;
 }
@@ -382,7 +382,7 @@ main {
 
 #decision p {
     padding: 30px 74px 106px 74px;
-}
+} 
 
 /* form section */
 
