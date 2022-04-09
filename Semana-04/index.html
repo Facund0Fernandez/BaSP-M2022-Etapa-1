@@ -7,14 +7,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/sidebar.css">
+        <link rel="stylesheet" href="CSS/main.css">
         <title>Trackgenix</title>
     </head>
 
     <body>
 
         <header>
-            <h1>Trackgenix</h1> 
-            <p>We’re Trackgenix SA</p>
+                <img src="Images/menu-hamburguesa.png" alt="Menu">
+            
+            <div>
+                <h1>Trackgenix</h1> 
+                <p>We’re Trackgenix SA</p>
+            </div>
         </header>
 
         <aside>
@@ -53,12 +60,14 @@
 
         <main>
 
-            <section class="welcome">
-                <h2>Welcome to Trackgenix.</h2>
+            <section>
+                <div class="welcome">
+                    <h2>Welcome to Trackgenix.</h2>
 
-                <h3>The new work system</h3>
+                    <h3>The new work system</h3>
+                </div>
 
-                <div>
+                <div class="human-resources">
                     <img src="Images/imagen-de-recursos-humanos.png" alt="Recuros Humanos">
 
                     <p>
@@ -75,7 +84,6 @@
             <section class="features">
                 <h2>Features</h2>
                 
-                <article>
                     <div id="record">
                         <h3>RECORD OF HOURS</h3>
 
@@ -119,13 +127,12 @@
                             Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
                         </p>
                     </div>
-                </article>
             </section>
 
             <div class="line-features"></div>
 
-            <div class="why-use">
-                    <div id="productivity" class="border">
+            <section class="why-use">
+                    <div class="border">
                         <h3>PRODUCTIVITY BOOSTER</h3>
 
                         <p>
@@ -134,7 +141,7 @@
                         </p>
                     </div>
 
-                    <div id="work" class="border">
+                    <div class="border">
                         <h3>WORK TRACEABILITY</h3>
 
                         <p>
@@ -143,7 +150,7 @@
                         </p>
                     </div>
 
-                    <div id="leadership" class="border">
+                    <div class="border">
                         <h3>LEADERSHIP AND TEAM MANAGEMENT</h3>
 
                         <p>
@@ -152,7 +159,7 @@
                         </p>
                     </div>
 
-                    <div id="decision" class="border">
+                    <div class="border">
                         <h3>DECISION MAKING</h3>
 
                         <p>
@@ -160,11 +167,11 @@
                             Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
                         </p>
                     </div>
-            </div> 
+                </section> 
              
             <div class="line-why-use"></div>
 
-            <section id="form">
+            <section id="info-form">
                 <h2>Information</h2>
 
                 <form>
@@ -179,9 +186,9 @@
                         <input type="text">
                     </div>
 
-                    <div id="contact">
-                        <h3>CONTACT</h3>
+                    <h3>CONTACT</h3>
 
+                    <div id="contact">
                         <label class="container-hr">Human Resources
                             <input type="checkbox" checked="checked">
                             <span class="checkmark"></span>

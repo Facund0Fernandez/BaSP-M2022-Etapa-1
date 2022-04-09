@@ -1,0 +1,379 @@
+/* welcome section */
+
+main section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h2 {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #373867;
+}
+
+.welcome h3 {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #373867;
+}
+
+.human-resources img{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+}
+
+.human-resources p {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: 700;
+    font-weight: 400;
+    font-size: 16px;
+    color: #373867;
+}
+
+/* features section  */
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.features h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #373867;
+}
+
+.features h3 {
+    margin: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #373867;
+}
+
+.features p {
+    margin: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #373867;
+}
+
+#record img {
+    width: 200px;
+    height: 200px;
+}
+
+#resource img {
+    width: 200px;
+    height: 150px;
+}
+
+#reports img {
+    width: 150px;
+    height: 150px;
+}
+
+#roles img {
+    width: 200px;
+    height: 150px;
+}
+
+/* why use section  */
+
+.why-use {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;;
+}
+
+.why-use .border {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid #AACE9B;
+}
+
+.why-use .border h3 {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: #AACE9B;
+}
+
+.why-use .border p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #373867;
+}
+
+/* form section */
+
+#info-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info-form h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    color: #373867;
+}
+
+#info-form .name {
+    display: flex;
+    align-items: flex-start;
+}
+
+.name label {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #373867;
+}
+
+.name input {
+    width: 450px;
+    height: 35px;
+    background-color: rgba(55, 56, 103, 0.4);
+    border-radius: 20px;
+}
+
+#info-form .email {
+    display: flex;
+    align-items: flex-start;
+}
+
+.email label {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #373867;
+}
+
+.email input {
+    width: 450px;
+    height: 35px;
+    background-color: rgba(55, 56, 103, 0.4);
+    border-radius: 20px;
+}
+
+form h3 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #373867;
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact label {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #373867;
+}
+
+.container-hr {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-s {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container-c {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#contact input { 
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(55, 56, 103, 0.4);
+}
+
+.container-hr:hover input ~ .checkmark {
+    background-color: gray;
+}
+
+.container-s:hover input ~ .checkmark {
+    background-color: gray;
+}
+
+.container-c:hover input ~ .checkmark {
+    background-color: gray;
+}
+
+.container-hr input:checked ~ .checkmark {
+    background-color: #373867;
+}
+
+.container-s input:checked ~ .checkmark {
+    background-color: #373867;
+}
+
+.container-c input:checked ~ .checkmark {
+    background-color: #373867;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-hr input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-s input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-c input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-hr .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container-s .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.container-c .checkmark:after {
+    left: 5px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.message label {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    color: #373867;
+}
+
+.message textarea {
+    width: 450px;
+    height: 150px;
+    background: rgba(55, 56, 103, 0.4);
+    border-radius: 20px;
+}
+
+form .submit {
+    width: 162px;
+    height: 42px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #373867;
+    text-align: center;
+    text-decoration: none;
+    background-color: #AACE9B;
+}
