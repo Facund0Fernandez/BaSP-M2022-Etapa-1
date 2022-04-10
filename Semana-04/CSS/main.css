@@ -24,12 +24,11 @@
     color: #373867;
 }
 
-#welcome img{
+#welcome img {
     width: 500px;
     height: 300px;
     margin: 50px;
 }
-
 
 #human-resources {
     display: flex;
@@ -65,45 +64,61 @@
 #features .features-items {
     display: flex;
     align-items: center;
-    flex-direction: column;
 }
 
-.features-items h3 {
-    margin: 40px;
+#features .features-items-reverse {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#features h3 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    margin: 40px;
     font-weight: 700;
     font-size: 25px;
     color: #373867;
 }
 
 .features-items p {
-    margin: 40px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    margin: 20px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
+    color: #373867;
+}
+
+.features-items-reverse p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin: 20px;
+    font-weight: 400;
+    font-size: 15px;
     color: #373867;
 }
 
 #clock {
-    width: 200px;
-    height: 200px;
-}
-
-#resource {
-    width: 200px;
-    height: 150px;
-}
-
-#reports {
     width: 150px;
     height: 150px;
 }
 
+#resource {
+    width: 150px;
+    height: 100px;
+    margin: 20px;
+}
+
+#reports {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
 #roles {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
 }
 
 /* why use section  */
@@ -150,7 +165,6 @@
 
 #info-form {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -162,6 +176,11 @@
     font-weight: 700;
     font-size: 35px;
     color: #373867;
+}
+
+#form-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 #name-email {
@@ -187,10 +206,14 @@
     border-radius: 20px;
 }
 
+#name-email input:hover {
+    border: 2px solid #AACE9B;
+}
+
 form h3 {
+    margin: 50px 0 10px 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    margin: 50px 0 10px 0;
     font-weight: 700;
     font-size: 22px;
     color: #373867;
@@ -198,12 +221,14 @@ form h3 {
 
 #contact {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #contact label {
+    margin: 0px 0px 50px 0;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    margin: 10px 0 50px 0;
     font-weight: 700;
     color: #373867;
 }
@@ -211,7 +236,7 @@ form h3 {
 .container {
     display: block;
     position: relative;
-    padding-left: 25px;
+    padding-left: 20px;
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 15px;
@@ -290,6 +315,10 @@ form h3 {
     border-radius: 20px;
 }
 
+.message textarea:hover {
+    border: 2px solid #AACE9B;
+}
+
 form .submit {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -303,6 +332,10 @@ form .submit {
     text-align: center;
     text-decoration: none;
     background-color: #AACE9B;
+}
+
+form .submit:hover {
+    background-color: #69A362;;
 }
 
 /* our history section */
@@ -327,15 +360,17 @@ form .submit {
     margin: 25px 15px 40px 15px;
     font-weight: 600;
     font-size: 15px;
+    text-align: center;
     color: #373867;
 }
 
 #our-history .normal-p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    margin: 0 15px 15px 15px;
+    margin: 0 25px 25px 25px;
     font-weight: 400;
     font-size: 15px;
+    text-align: center;
     color: #373867;
 }
 
@@ -343,7 +378,7 @@ form .submit {
 
 #order-list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 .three-list {
@@ -358,7 +393,7 @@ form .submit {
     font-style: normal;
     margin: 0 0 15px 0;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 40px;
     color: #AACE9B;
 }
 
@@ -373,7 +408,7 @@ form .submit {
     font-style: normal;
     margin: 0 0 10px 0;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 25px;
     list-style-type: disc;
     color: #373867;
 }
