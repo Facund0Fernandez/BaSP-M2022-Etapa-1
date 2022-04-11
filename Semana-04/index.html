@@ -22,16 +22,14 @@
             </div>
         </header>
 
-        <aside>
+        <aside id="sidebar">
             <div class="line-sidebar"></div>
-            <div>
-                <nav>
+            <div class="nav">
                     <ul>
                         <li> <a href="#">Home</a> </li>
                         <li> <a href="#">Sign Up</a> </li>
                         <li> <a href="#">Log In</a> </li>
                     </ul>
-                </nav>
             </div>
             <div class="line-sidebar"></div>
             <div class="contact">
@@ -44,25 +42,32 @@
             </div>
             <div class="information">
                 <ul>
-                    <li> <img src="Images/email.png" alt="Email"> <a href="#">information@untitled.tld</a> </li>
-                    <li> <img src="Images/phone.png" alt="Phone"> <a href="#">Tel.: (000) 000-0000</a> </li>
-                    <li> <img src="Images/house.png" alt="House"> <a href="#">1234 Somewhere Road #8254 Nashville, TN 00000-0000</a> </li>
+                    <img src="Images/email.png" alt="Email">
+                    <li> <a href="#">information@untitled.tld</a> </li>
+                    <img src="Images/phone.png" alt="Phone">
+                    <li> <a href="#">Tel.: (000) 000-0000</a> </li>
+                    <img src="Images/house.png" alt="House">
+                    <li> <a href="#">1234 Somewhere Road #8254 Nashville, TN 00000-0000</a> </li>
                 </ul>
             </div>
         </aside>
 
         <main>
             <section id="welcome">
-                <h2>Welcome to Trackgenix.</h2>
-                <h3>The new work system</h3>
-                <img src="Images/imagen-de-recursos-humanos.png" alt="Recuros Humanos">
-                <div id="human-resources">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
-                        Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
-                        Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam.
-                        Lorem ipsum dolor sit nullam.
-                    </p>
+                <div id="welcome-titles">
+                    <h2>Welcome to Trackgenix.</h2>
+                    <h3>The new work system</h3>
+                </div>
+                <div id="human-resources">    
+                    <img src="Images/imagen-de-recursos-humanos.png" alt="Recuros Humanos">
+                    <div>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
+                            Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris.
+                            Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam.
+                            Lorem ipsum dolor sit nullam.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -70,37 +75,45 @@
 
             <section id="features">
                 <h2>Features</h2>
-                <h3>RECORD OF HOURS</h3>
-                <div class="features-items">
-                    <img src="Images/imagen-reloj.webp" alt="Reloj" id="clock">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
+                <div class="item-container">
+                    <h3>RECORD OF HOURS</h3>
+                    <div class="features-items">
+                        <img src="Images/imagen-reloj.webp" alt="Reloj" id="clock">
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
                 </div>
-                <h3>RESOURCE MANAGEMENT</h3>
-                <div class="features-items-reverse">
-                    <img src="Images/gestion-de-recursos-imagen.jpg" alt="Gestion de recursos" id="resource">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
+                <div class="item-container">
+                    <h3>RESOURCE MANAGEMENT</h3>
+                    <div class="features-items features-items-reverse">
+                        <img src="Images/gestion-de-recursos-imagen.jpg" alt="Gestion de recursos" id="resource">
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
                 </div>
-                <h3>REPORTS</h3>
-                <div class="features-items">
-                    <img src="Images/imagen-reporte.png" alt="Reporte" id="reports">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
+                <div class="item-container">
+                    <h3>REPORTS</h3>
+                    <div class="features-items">
+                        <img src="Images/imagen-reporte.png" alt="Reporte" id="reports">
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
                 </div>
-                <h3>MULTIPLE ROLES</h3>
-                <div class="features-items-reverse">
-                    <img src="Images/imagen-multiples-roles.webp" alt="Multiples roles" id="roles">
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
-                        Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
+                <div class="item-container">
+                    <h3>MULTIPLE ROLES</h3>
+                    <div class="features-items features-items-reverse">
+                        <img src="Images/imagen-multiples-roles.webp" alt="Multiples roles" id="roles">
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.
+                            Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
                 </div>
             </section>
 
