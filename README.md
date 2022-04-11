@@ -30,3 +30,7 @@ This week we made the basic structure of the landing page (previously designed i
 ## Weekly problem 03
 
 This week's problem was styling the HTML file using CSS. For this we are guided by the style of the landing page made in Figma.
+
+## Weekly problem 04
+
+This week's objective was to apply flexbox in css to facilitate the application of styles. The work carried out can be seen at the following [link](https://facund0fernandez.github.io/BaSP-M2022-Etapa-1/Semana-04/).
