@@ -1,3 +1,6 @@
+main {
+    padding-top: 130px;
+}
 /* welcome section */
 #welcome {
     display: flex;
@@ -26,10 +29,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 #human-resources img {
-    width: 500px;
-    height: 300px;
+    width: 90%;
+    height: auto;
     margin: 50px 0 50px 0;
 }
 #human-resources div {
@@ -74,32 +78,34 @@
 #features h3 {
     margin: 40px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     color: #373867;
 }
 .features-items p {
-    margin: 20px;
+    margin: 0 20px 0 20px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
     color: #373867;
 }
 #clock {
-    width: 150px;
-    height: 150px;
+    width: 80%;
+    height: auto;
+    padding: 2% 2%;
 }
 #resource {
-    width: 150px;
-    height: 100px;
-    margin: 20px;
+    width: 70%;
+    height: auto;
+    padding: 0 10%;
 }
 #reports {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
 }
 #roles {
-    width: 150px;
-    height: 100px;
+    width: 80%;
+    height: auto;
 }
 
 /* why use section  */
@@ -123,13 +129,13 @@
 .border h3 {
     margin: 40px 20px 40px 20px;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     color: #AACE9B;
 }
 .border p {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     color: #373867;
 }
@@ -163,7 +169,7 @@
 }
 #name-email input {
     width: 100%;
-    height: 35px;
+    height: 40px;
     margin: auto;
     background-color: rgba(55, 56, 103, 0.4);
     border-radius: 20px;
@@ -284,20 +290,20 @@ form .submit:hover {
 }
 #our-history h2 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
     color: #373867;
 }
 #bold-p {
     margin: 25px 15px 40px 15px;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     color: #373867;
 }
 #our-history .normal-p {
     margin: 0 25px 25px 25px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     color: #373867;
 }
@@ -316,7 +322,7 @@ form .submit:hover {
 .three-list h3 {
     margin: 0 0 15px 0;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 25px;
     color: #AACE9B;
 }
 .three-list ul {
@@ -327,7 +333,7 @@ form .submit:hover {
 .three-list li {
     margin: 0 0 10px 0;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     list-style-type: disc;
     color: #373867;
 }
@@ -352,13 +358,13 @@ form .submit:hover {
         align-items: flex-start;
     }
     #welcome-titles h2 {
-        font-size: 55px;
+        font-size: 45px;
     }
     #welcome-titles h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
     #human-resources div p {
-        font-size: 20px;
+        font-size: 18px;
     }
     #human-resources {
         flex-direction: row-reverse;
@@ -371,7 +377,6 @@ form .submit:hover {
         flex-direction: row;
         justify-content: center;
     }
-
     .item-container .features-items {
         display: flex;
         flex-direction: row;
@@ -382,21 +387,21 @@ form .submit:hover {
         flex-direction: row;
     }
     #features h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     #features h3 {
-        font-size: 30px;
+        font-size: 25px;
 
     }.features-items p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     /* why use section */
     .border h3 {
-        font-size: 30px;
+        font-size: 27px;
     }
     .border p {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     /* form section */
@@ -418,13 +423,13 @@ form .submit:hover {
 
     /* our history section */
     #our-history h2 {
-        font-size: 40px;
+        font-size: 35px;
     }
     #bold-p {
-        font-size: 20px;
+        font-size: 18px;
     }
     #our-history .normal-p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* order lists section */
@@ -435,10 +440,10 @@ form .submit:hover {
         justify-content: space-around;
     }
     .three-list h3 {
-        font-size: 50px;
+        font-size: 35px;
     }
     .three-list li {
-        font-size: 30px;
+        font-size: 27px;
     }
 }
 
@@ -453,13 +458,13 @@ form .submit:hover {
         align-items: flex-start;
     }
     #welcome-titles h2 {
-        font-size: 60px;
+        font-size: 50px;
     }
     #welcome-titles h3 {
-        font-size: 40px;
+        font-size: 35px;
     }
     #human-resources div p {
-        font-size: 25px;
+        font-size: 22px;
     }
     #human-resources {
         flex-direction: row-reverse;
@@ -477,24 +482,21 @@ form .submit:hover {
         flex-direction: row;
     }
     #features h2 {
-        font-size: 60px;
+        font-size: 45px;
     }
     #features h3 {
-        font-size: 40px;
+        font-size: 30px;
 
     }.features-items p {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     /* why use section */
-    .border {
-        width: 100%;
-    }
     .border h3 {
-        font-size: 35px;
+        font-size: 30px;
     }
     .border p {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     /* form section */
@@ -519,13 +521,13 @@ form .submit:hover {
 
     /* our history section */
     #our-history h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     #bold-p {
-        font-size: 25px;
+        font-size: 22px;
     }
     #our-history .normal-p {
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 
