@@ -366,6 +366,12 @@ form .submit:hover {
     }
 
     /* features section */
+    .two-item-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .item-container .features-items {
         display: flex;
         flex-direction: row;
@@ -422,6 +428,12 @@ form .submit:hover {
     }
 
     /* order lists section */
+    #order-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
     .three-list h3 {
         font-size: 50px;
     }
@@ -514,14 +526,6 @@ form .submit:hover {
     }
     #our-history .normal-p {
         font-size: 25px;
-    }
-
-    /* order lists section */
-    #order-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
     }
 }
 
