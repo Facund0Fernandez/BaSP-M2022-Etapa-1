@@ -19,11 +19,10 @@ var concatenacion = primerString + ' ' + segundoString;
 console.log(concatenacion);
 
 /* c) Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string)
- guardando el resultado de la suma en una 3er variable (utilizar length). */
+guardando el resultado de la suma en una 3er variable (utilizar length). */
 
 console.log('Excercise 1.c:');
 var tercerString = 'Mariposa';
 var cuartoString = 'Cucaracha';
 var largoSuma = tercerString.length + cuartoString.length;
 console.log(largoSuma);
-
