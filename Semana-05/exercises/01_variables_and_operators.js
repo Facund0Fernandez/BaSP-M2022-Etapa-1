@@ -7,7 +7,7 @@ console.log('Excercise 1.a:');
 var primerSumando = 10;
 var segundoSumando = 20;
 var total = primerSumando + segundoSumando;
-console.log(total);
+console.log('El resultado de la suma entre ' + primerSumando + ' y ' + segundoSumando + ' es = ' + total);
 
 
 /* b) Crear dos variables de tipo String y concatenarlas guardando  el resultado en una 3er variable. */
@@ -25,4 +25,4 @@ console.log('Excercise 1.c:');
 var tercerString = 'Mariposa';
 var cuartoString = 'Cucaracha';
 var largoSuma = tercerString.length + cuartoString.length;
-console.log(largoSuma);
+console.log('La suma de las longitudes de las palabras ' + tercerString + ' y ' + cuartoString + ' es = ' + largoSuma);

@@ -12,16 +12,16 @@ con los primeros 5 caracteres guardando el resultado en una nueva variable (util
 
 console.log('Excercise 2.b:');
 var diezCaracteres2 = 'Alienígena';
-var nuevoDiezCaracteres2 = diezCaracteres2.substring(0,5);
-console.log(nuevoDiezCaracteres2);
+var cincoCaracteres = diezCaracteres2.substring(0,5);
+console.log('Los primeros 5 caracteres de ' + '"' + diezCaracteres2 + '"' + ' son: ' + cincoCaracteres);
 
 /* c) Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con
 los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring). */
 
 console.log('Excercise 2.c:');
 var diezCaracteres3 = 'El fin de semana habrá mucho sol';
-var nuevoDiezCaracteres3 = diezCaracteres3.substring(29);
-console.log(nuevoDiezCaracteres3);
+var tresCaracteres = diezCaracteres3.substring(29);
+console.log('Los últimos 3 caracteres de ' + '"' + diezCaracteres3 + '"' + ' son: ' + tresCaracteres);
 
 /* d) Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en
 mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable 
@@ -38,7 +38,7 @@ Encontrar la posición del primer espacio en blanco y guardarla en una variable 
 console.log('Excercise 2.e:');
 var diezCaracteres5 = 'El alumno no aprobó.';
 var nuevoDiezCaracteres5 = diezCaracteres5.indexOf(' ', 0);
-console.log(nuevoDiezCaracteres5);
+console.log('La posición del primer espacio en blanco de ' + '"' + diezCaracteres5 + '"' + ' es: ' + nuevoDiezCaracteres5);
 
 /* f) Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio).
 Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas

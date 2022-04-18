@@ -6,6 +6,7 @@ sino un alerta con el mensaje “Lower than 0,5”. */
 
 console.log('Excercise 4.a:');
 var numeroAleatorio = Math.random();
+console.log('El número aleatorio generado es: ' + numeroAleatorio);
 if (numeroAleatorio >= 0,5) {
     alert('Greater than 0,5');
 } else {
@@ -23,19 +24,19 @@ vi. “Adulto mayor” entre 61 y 75 años;
 vii. “Anciano” si es mayor a 75 años. */
 
 console.log('Excercise 4.b:');
-var numeroAleatorio2 = Math.round(Math.random() * 100);
-console.log(numeroAleatorio2);
-if (numeroAleatorio2 < 2) {
+var age = Math.round(Math.random() * 100);
+console.log('La edad es: ' + age);
+if (age < 2) {
     alert('Bebé');
-} else if (numeroAleatorio2 >= 2 && numeroAleatorio2 <= 12 ) {
+} else if (age >= 2 && age <= 12 ) {
     alert('Niño');
-} else if (numeroAleatorio2 > 12 && numeroAleatorio2 <= 19) {
+} else if (age > 12 && age <= 19) {
     alert('Adolescente');
-} else if (numeroAleatorio2 > 19 && numeroAleatorio2 <= 30) {
+} else if (age > 19 && age <= 30) {
     alert('Joven');
-} else if (numeroAleatorio2 > 30 && numeroAleatorio2 <= 60) {
+} else if (age > 30 && age <= 60) {
     alert('Adulto');
-} else if (numeroAleatorio2 > 60 && numeroAleatorio2 <= 75) {
+} else if (age > 60 && age <= 75) {
     alert('Adulto mayor');
 } else {
     alert('Anciano');

@@ -6,14 +6,14 @@ console.log('Exercise 3: Arrays.');
 console.log('Excercise 3.a:');
 var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
 'Julio','Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-console.log(meses[4], meses[10]);
+console.log('El mes 5 es: ' + meses[4] + '. El mes 10 es: ' + meses[10]);
 
 /* b) Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort). */
 
 console.log('Excercise 3.b:');
 var meses2 = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
 'Julio','Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-console.log(meses2.sort());
+console.log('Meses por orden alfabético: ' + meses2.sort());
 
 /* c) Agregar un elemento al principio y al final del array (utilizar unshift y push). */
 
@@ -38,7 +38,7 @@ console.log(meses4);
 console.log('Excercise 3.e:');
 var meses5 = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
 'Julio','Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-console.log(meses5.reverse());
+console.log('Meses ordenados inversamente: ' + meses5.reverse());
 
 /* f) Unir todos los elementos del array en un único string donde cada
 mes este separado por un guión - (utilizar join). */
