@@ -34,3 +34,7 @@ This week's problem was styling the HTML file using CSS. For this we are guided 
 ## Weekly problem 04
 
 This week's objective was to apply flexbox in css to facilitate the application of styles. The work carried out can be seen at the following [link](https://facund0fernandez.github.io/BaSP-M2022-Etapa-1/Semana-04/).
+
+## Weekly problem 05
+
+Weekly problem number 5 consisted on acquiring the bases of Javascript. For them, we were commissioned to carry out a series of exercises which can be viewed at the following [link](https://facund0fernandez.github.io/BaSP-M2022-Etapa-1/Semana-05/).
