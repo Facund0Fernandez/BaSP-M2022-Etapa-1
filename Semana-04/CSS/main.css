@@ -1,5 +1,5 @@
 main {
-    padding-top: 130px;
+    padding-top: 100px;
 }
 /* welcome section */
 #welcome {
@@ -8,8 +8,7 @@ main {
     align-items: center;
 }
 #welcome-titles {
-    width: 100%;
-    margin: 10%;
+    margin: 10% 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +28,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 }
 #human-resources img {
     width: 90%;
@@ -40,7 +38,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 90%;
 }
 #human-resources div p {
     font-style: 700;
@@ -89,22 +87,22 @@ main {
     color: #373867;
 }
 #clock {
-    width: 80%;
+    width: 60%;
     height: auto;
-    padding: 2% 2%;
+    margin: 0 0 0 4%;
 }
 #resource {
-    width: 70%;
+    width: 60%;
     height: auto;
-    padding: 0 10%;
+    margin: 0 10% 0 0;
 }
 #reports {
-    width: 40%;
+    width: 50%;
     height: auto;
-    margin-left: 5%;
+    margin-left: 8%;
 }
 #roles {
-    width: 80%;
+    width: 70%;
     height: auto;
 }
 
@@ -344,7 +342,8 @@ form .submit:hover {
 
 /* lines */ 
 .line {
-    margin: 50px 25px 50px 25px; 
+    width: 80%;
+    margin: 5% auto; 
     border: 5px solid #AACE9B;
 }
 
@@ -450,7 +449,7 @@ form .submit:hover {
 /* Desktop */
 @media only screen and (min-width: 1024px) {
     main {
-        margin-left: 25%;
+        padding-left: 15%;
     }
     /* welcome section */
     #welcome-titles {
@@ -472,6 +471,13 @@ form .submit:hover {
     }
 
     /* features section */
+    #features {
+        align-items: flex-start;
+    }
+    #features h2 {
+        margin: 0 0 0 10%;
+        font-size: 45px;
+    }
     .item-container .features-items {
         display: flex;
         flex-direction: row;
@@ -481,13 +487,10 @@ form .submit:hover {
         align-items: center;
         flex-direction: row;
     }
-    #features h2 {
-        font-size: 45px;
-    }
     #features h3 {
         font-size: 30px;
-
-    }.features-items p {
+    }
+    .features-items p {
         font-size: 18px;
     }
 
