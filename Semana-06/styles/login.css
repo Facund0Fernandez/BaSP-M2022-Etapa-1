@@ -3,7 +3,7 @@
     justify-content: center;
     height: 100%;
 }
-main div {
+#main-log-in div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@ main div {
     font-weight: bold;
     margin: 10% 0 15% 0;
 }
-form {
+#form-log-in {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,7 +49,7 @@ form {
     height: 20px;
     width: 20px;
 }
-.submit-agree {
+.submit-log-in {
     width: 100px;
     height: 30px;
     margin-top: 20%;
@@ -61,7 +61,7 @@ form {
     text-decoration: none;
     background-color: #AACE9B;
 }
-.submit-agree:hover {
+.submit-log-in:hover {
     cursor: pointer;
     background-color: #e3eae0;
     transition: 0.3s;
