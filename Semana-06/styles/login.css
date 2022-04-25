@@ -81,3 +81,12 @@
 #reset-password a:hover {
     color: rgba(55, 56, 103, 0.4);
 }
+/* error email input */
+#alert-email {
+    color: red; 
+    font-size: 10px;  
+}
+#alert-password {
+    color: red; 
+    font-size: 10px;  
+}
