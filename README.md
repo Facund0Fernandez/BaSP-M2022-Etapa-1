@@ -38,3 +38,7 @@ This week's objective was to apply flexbox in css to facilitate the application 
 ## Weekly problem 05
 
 Weekly problem number 5 consisted on acquiring the bases of Javascript. For them, we were commissioned to carry out a series of exercises which can be viewed at the following [link](https://facund0fernandez.github.io/BaSP-M2022-Etapa-1/Semana-05/).
+
+## Weekly problem 06
+
+The objective of this week was to add two screens (log in and sign up) to the work done in week 04 (landing page). For this we apply what we have learned in Javascript and we give dynamism to the screens. Everything can be seen in the following [link](https://facund0fernandez.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html).
