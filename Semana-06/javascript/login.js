@@ -51,6 +51,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
         passwordInputElement.style = "border-color: none";
         alertPassword.removeChild(alertMessagePassword);
     }
+
+    /* agree */
+    var agreeLogin = document.getElementById("agreelogin");
+    var emailAgree = document.getElementById("email-agree");
+    var passwordAgree = document.getElementById("password-agree");
+
+    function infoAgree() {
+        if (/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/.test(emailInputElement.value)) {
+            var emailCorrectText = "Email is correct: ";
+            emailAgree.innerHTML = emailCorrectText + emailInputElement.value;
+        } else {
+            var emailIncorrectText = "Email is incorrect: ";
+            emailAgree.innerHTML = emailIncorrectText + emailInputElement.value;
+        }
+        if (passwordInputElement.value.length > 8 && numberSum == true && letterSum == true) {
+            var passwordCorrectText = "Password is correct: ";
+            passwordAgree.innerHTML = passwordCorrectText + passwordInputElement.value;
+        } else {
+            var passwordIncorrectText = "Password is incorrect: ";
+            passwordAgree.innerHTML = passwordIncorrectText + passwordInputElement.value;
+        }
+    }
+    agreeLogin.onclick = function (e) {
+        e.preventDefault();
+        infoAgree();
+    }
 });
 
 
