@@ -3,13 +3,13 @@
     justify-content: center;
     height: 100%;
 }
-#main-log-in div {
+#container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20% 0 20% 0;
-    width: 25%;
-    height: 50%;
+    margin: 20% 0 40% 0;
+    width: 35%;
+    height: 60%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
     border-radius: 5px;
 }
@@ -22,19 +22,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90%;
+    height: 45%;
 }
 .input-text-log-in {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
 .input-text-log-in input {
+    display: flex;
+    width: 100%;
     border: none;
     border-bottom: solid 1px;
 }
 .input-checkbox-log-in {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -43,16 +47,17 @@
 }
 .input-checkbox-log-in p {
     font-size: 13px;
-    margin-left: 5%;
 }
 .img-login {
     height: 20px;
     width: 20px;
 }
-#submit-log-in {
+#agreelogin {
+    display: flex;
+    justify-content: center;
     width: 100px;
     height: 30px;
-    margin-top: 20%;
+    margin-top: 10%;
     border: none;
     border-radius: 10px;
     font-weight: 400;
@@ -61,15 +66,14 @@
     text-decoration: none;
     background-color: #AACE9B;
 }
-#submit-log-in:hover {
+#agreelogin:hover {
     cursor: pointer;
     background-color: #e3eae0;
     transition: 0.3s;
 }
-
 #reset-password {
-    align-self: flex-end;
-    margin:20% 5% 0 0;
+    align-self: center;
+    margin-top: 3%;
 }
 #reset-password:hover {
     cursor: pointer;
@@ -83,6 +87,11 @@
 }
 /* errors */
 span {
+    color: red; 
+    font-size: 10px;  
+}
+div .agree-incorrect {
+    margin-top: 2%;
     color: red; 
     font-size: 10px;  
 }

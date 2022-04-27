@@ -230,11 +230,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 letterSum = true;
             }
         }
-        if (password.value.length > 8 && numberSum == true && letterSum == true) {
-            password.style = "border: solid 2px  #48e525; border-radius: 5px";
+        if (passwordInputElement.value.length > 8 && numberSum == true && letterSum == true) {
+            passwordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
             validation++;
         } else {
-            password.style = "border: solid 2px red; border-radius: 5px";
+            passwordInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertPassword.appendChild(alertMessagePassword);
         }
     }
