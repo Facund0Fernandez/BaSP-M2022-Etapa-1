@@ -8,23 +8,20 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var alertMessageEmail = document.createTextNode("Insert a valid email format.");
     var validationEmail;
 
-    function emailValidation() {
-        emailInputElement.onblur = function () {
-            if (/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/.test(emailInputElement.value)) {
-                emailInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-                validationEmail = true;
-            } else {
-                emailInputElement.style = "border: solid 2px red; border-radius: 5px";
-                alertEmail.appendChild(alertMessageEmail);
-                validationEmail = false;
-            }
-        };
-        emailInputElement.onfocus = function () {
-            emailInputElement.style = "border-color: none";
-            alertEmail.removeChild(alertMessageEmail);
-        };
+    emailInputElement.onblur = function () {
+        if (/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/.test(emailInputElement.value)) {
+            emailInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
+            validationEmail = true;
+        } else {
+            emailInputElement.style = "border: solid 2px red; border-radius: 5px";
+            alertEmail.appendChild(alertMessageEmail);
+            validationEmail = false;
+        }
     };
-    emailValidation();
+    emailInputElement.onfocus = function () {
+        emailInputElement.style = "border-color: none";
+        alertEmail.removeChild(alertMessageEmail);
+    };
 
     /* Password validation */
     var passwordInputElement = document.getElementById("password");
@@ -32,42 +29,38 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var alertMessagePassword = document.createTextNode("Insert a valid password format.");
     var validationPassword;
 
-    function passwordValidation() {
-        passwordInputElement.onblur = function () {
-            var numberSum = false;
-            for (var i = 0; i < passwordInputElement.value.length; i++) {
-                if (isNaN(passwordInputElement.value[i]) == false) {
-                    numberSum = true;
-                }
+    passwordInputElement.onblur = function () {
+        var numberSum = false;
+        for (var i = 0; i < passwordInputElement.value.length; i++) {
+            if (isNaN(passwordInputElement.value[i]) == false) {
+                numberSum = true;
             }
-            var letterSum = false;
-            for (var i = 0; i < passwordInputElement.value.length; i++) {
-                if (isNaN(passwordInputElement.value[i]) == true) {
-                    letterSum = true;
-                }
+        }
+        var letterSum = false;
+        for (var i = 0; i < passwordInputElement.value.length; i++) {
+            if (isNaN(passwordInputElement.value[i]) == true) {
+                letterSum = true;
             }
-            if (passwordInputElement.value.length > 8 && numberSum == true && letterSum == true) {
-                passwordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-                validationPassword = true;
-            } else {
-                passwordInputElement.style = "border: solid 2px red; border-radius: 5px";
-                alertPassword.appendChild(alertMessagePassword);
-                validationPassword = false;
-            }
-        };
-        passwordInputElement.onfocus = function () {
-            passwordInputElement.style = "border-color: none";
-            alertPassword.removeChild(alertMessagePassword);
-        };
+        }
+        if (passwordInputElement.value.length > 8 && numberSum == true && letterSum == true) {
+            passwordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
+            validationPassword = true;
+        } else {
+            passwordInputElement.style = "border: solid 2px red; border-radius: 5px";
+            alertPassword.appendChild(alertMessagePassword);
+            validationPassword = false;
+        }
     };
-    passwordValidation();
+    passwordInputElement.onfocus = function () {
+        passwordInputElement.style = "border-color: none";
+        alertPassword.removeChild(alertMessagePassword);
+    };
 
     /* Agree event */
     var agreeLogin = document.getElementById("agreelogin");
     var emailCorrectText = "Email is correct: ";
     var passwordCorrectText = "Password is correct: ";
     var IncorrectText = "Error. Please, verify your information: ";
-
 
     function infoAgree() {
         if (validationEmail === true && validationPassword === true) {
