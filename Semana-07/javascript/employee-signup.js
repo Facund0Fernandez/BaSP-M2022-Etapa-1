@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
-    var validation = 0;
+    var validation;
 
     /* Name validation */
     var nameInputElement = document.getElementById("fname");
@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (nameInputElement.value.length > 3 && numberSum == false) {
             nameInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             nameInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertName.appendChild(alertMessageName);
+            validation = false;
         }
     }
     nameInputElement.onfocus = function () {
@@ -41,10 +42,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (surnameInputElement.value.length > 3 && numberSum == false) {
             surnameInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             surnameInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertSurname.appendChild(alertMessageSurname);
+            validation = false;
         }
     }
     surnameInputElement.onfocus = function () {
@@ -60,10 +62,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     dniInputElement.onblur = function () {
         if (dniInputElement.value.length > 7 && isNaN(dniInputElement.value) == false) {
             dniInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             dniInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertDNI.appendChild(alertMessageDNI);
+            validation = false;
         }
     }
     dniInputElement.onfocus = function () {
@@ -89,10 +92,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (slash == 2 && isNaN(date) == false) {
             dateInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             dateInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertDate.appendChild(alertMessageDate);
+            validation = false;
         }
     }
     dateInputElement.onfocus = function () {
@@ -108,10 +112,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     phoneInputElement.onblur = function () {
         if (phoneInputElement.value.length == 10 && isNaN(phoneInputElement.value) == false) {
             phoneInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             phoneInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertPhone.appendChild(alertMessagePhone);
+            validation = false;
         }
     }
     phoneInputElement.onfocus = function () {
@@ -143,10 +148,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
             addressInputElement.value.indexOf(' ') < addressInputElement.value.length - 1 &&
             addressInputElement.value.length > addressInputElement.value.lastIndexOf(' ')) {
             addressInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             addressInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertAddress.appendChild(alertMessageAddress);
+            validation = false;
         }
     }
     addressInputElement.onfocus = function () {
@@ -162,10 +168,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     locationInputElement.onblur = function () {
         if (locationInputElement.value.length > 3) {
             locationInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             locationInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertLocation.appendChild(alertMessageLocation);
+            validation = false;
         }
     }
     locationInputElement.onfocus = function () {
@@ -181,11 +188,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     codeInputElement.onblur = function () {
         if (codeInputElement.value.length >= 4 && codeInputElement.value.length <= 5 && isNaN(codeInputElement.value) == false) {
             codeInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             codeInputElement.style = "border: solid 2px red; border-radius: 5px";
-            /* Agregar mensaje de error en este espacio*/
             alertCode.appendChild(alertMessageCode);
+            validation = false;
         }
     }
     codeInputElement.onfocus = function () {
@@ -197,14 +204,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var emailInputElement = document.getElementById("email");
     var alertEmail = document.getElementById("alert-email");
     var alertMessageEmail = document.createTextNode("Insert a valid email format.");
+    var validationEmail;
 
     emailInputElement.onblur = function () {
         if (/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/.test(emailInputElement.value)) {
             emailInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validationEmail = true;
         } else {
             emailInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertEmail.appendChild(alertMessageEmail);
+            validationEmail = false;
         }
     }
     emailInputElement.onfocus = function () {
@@ -216,6 +225,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var passwordInputElement = document.getElementById("password");
     var alertPassword = document.getElementById("alert-password");
     var alertMessagePassword = document.createTextNode("Insert a valid password format.");
+    var validationPassword;
 
     passwordInputElement.onblur = function () {
         var numberSum = false;
@@ -232,10 +242,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (passwordInputElement.value.length > 8 && numberSum == true && letterSum == true) {
             passwordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validationPassword = true;
         } else {
             passwordInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertPassword.appendChild(alertMessagePassword);
+            validationPassword = false;
         }
     }
     passwordInputElement.onfocus = function () {
@@ -251,10 +262,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     repPasswordInputElement.onblur = function () {
         if (passwordInputElement.value == repPasswordInputElement.value) {
             repPasswordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation++;
+            validation = true;
         } else {
             repPasswordInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertRepPassword.appendChild(alertMessageRepPassword);
+            validation = false;
         }
     }
     repPasswordInputElement.onfocus = function () {
@@ -262,7 +274,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
         alertRepPassword.removeChild(alertMessageRepPassword);
     }
 
+    /* Agree event */
+    var agreeSignup = document.getElementById("agreesignup");
+    var emailCorrectText = "Email is correct: ";
+    var passwordCorrectText = "Password is correct: ";
+    var IncorrectText = "Error. Please, verify your information: ";
 
-
-
+    function infoAgree() {
+        if (validationEmail === true && validationPassword === true) {
+            alert(
+                emailCorrectText + emailInputElement.value + "\n" +
+                passwordCorrectText + passwordInputElement.value
+            );
+        } else {
+            alert(
+                IncorrectText + "\n" +
+                "Email: " + emailInputElement.value + "\n" +
+                "Password: " + passwordInputElement.value
+            );
+        }
+    }
+    agreeSignup.onclick = function (e) {
+        e.preventDefault();
+        infoAgree();
+    }
 });

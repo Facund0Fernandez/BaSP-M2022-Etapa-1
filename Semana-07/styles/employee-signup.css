@@ -35,7 +35,7 @@
     display: flex;
     width: 100%;
 } 
-#submit-sign-up {
+#agreesignup {
     width: 100px;
     height: 30px;
     margin-top: 10%;
@@ -47,7 +47,7 @@
     text-decoration: none;
     background-color: #AACE9B;
 }
-#submit-sign-up:hover {
+#agreesignup:hover {
     cursor: pointer;
     background-color: #e3eae0;
     transition: 0.3s;
