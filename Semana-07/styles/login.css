@@ -86,7 +86,7 @@
     color: rgba(55, 56, 103, 0.4);
 }
 /* errors */
-span {
+div .red {
     color: red; 
     font-size: 10px;  
 }
