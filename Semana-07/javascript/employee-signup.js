@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     nameInputElement.onfocus = function () {
         nameInputElement.style = "border-color: none";
+        alertName.appendChild(alertMessageName);
         alertName.removeChild(alertMessageName);
     }
 
@@ -51,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     surnameInputElement.onfocus = function () {
         surnameInputElement.style = "border-color: none";
+        alertSurname.appendChild(alertMessageSurname);
         alertSurname.removeChild(alertMessageSurname);
     }
 
@@ -71,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     dniInputElement.onfocus = function () {
         dniInputElement.style = "border-color: none";
+        alertDNI.appendChild(alertMessageDNI);
         alertDNI.removeChild(alertMessageDNI);
     }
 
@@ -80,9 +83,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var alertMessageDate = document.createTextNode("Insert a valid date format.")
 
     dateInputElement.onblur = function () {
-        var day = dateInputElement.value.substring(0, 2);
-        var month = dateInputElement.value.substring(2, 2);
-        var year = dateInputElement.value.substring(4, 6);
         var date = dateInputElement.value.replace(/[/]/g, '');
         var slash = 0;
         for (var i = 0; i < dateInputElement.value.length; i++) {
@@ -101,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     dateInputElement.onfocus = function () {
         dateInputElement.style = "border-color: none";
+        alertDate.appendChild(alertMessageDate);
         alertDate.removeChild(alertMessageDate);
     }
 
@@ -121,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     phoneInputElement.onfocus = function () {
         phoneInputElement.style = "border-color: none";
+        alertPhone.appendChild(alertMessagePhone);
         alertPhone.removeChild(alertMessagePhone);
     }
 
@@ -157,6 +159,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     addressInputElement.onfocus = function () {
         addressInputElement.style = "border-color: none";
+        alertAddress.appendChild(alertMessageAddress);
         alertAddress.removeChild(alertMessageAddress);
     }
 
@@ -177,6 +180,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     locationInputElement.onfocus = function () {
         locationInputElement.style = "border-color: none";
+        alertLocation.appendChild(alertMessageLocation);
         alertLocation.removeChild(alertMessageLocation);
     }
 
@@ -197,6 +201,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     codeInputElement.onfocus = function () {
         codeInputElement.style = "border-color: none";
+        alertCode.appendChild(alertMessageCode);
         alertCode.removeChild(alertMessageCode);
     }
 
@@ -218,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     emailInputElement.onfocus = function () {
         emailInputElement.style = "border-color: none";
+        alertEmail.appendChild(alertMessageEmail);
         alertEmail.removeChild(alertMessageEmail);
     }
 
@@ -251,6 +257,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     passwordInputElement.onfocus = function () {
         passwordInputElement.style = "border-color: none";
+        alertPassword.appendChild(alertMessagePassword);
         alertPassword.removeChild(alertMessagePassword);
     }
 
@@ -271,6 +278,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     }
     repPasswordInputElement.onfocus = function () {
         repPasswordInputElement.style = "border-color: none";
+        alertRepPassword.appendChild(alertMessageRepPassword);
         alertRepPassword.removeChild(alertMessageRepPassword);
     }
 

@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
-
-
     /* Email validation */
     var emailInputElement = document.getElementById("email");
     var alertEmail = document.getElementById("alert-email");
@@ -20,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     };
     emailInputElement.onfocus = function () {
         emailInputElement.style = "border-color: none";
+        alertEmail.appendChild(alertMessageEmail);
         alertEmail.removeChild(alertMessageEmail);
     };
 
@@ -53,27 +52,35 @@ document.addEventListener("DOMContentLoaded", function (event) {
     };
     passwordInputElement.onfocus = function () {
         passwordInputElement.style = "border-color: none";
+        alertPassword.appendChild(alertMessagePassword);
         alertPassword.removeChild(alertMessagePassword);
     };
 
     /* Agree event */
     var agreeLogin = document.getElementById("agreelogin");
-    var emailCorrectText = "Email is correct: ";
-    var passwordCorrectText = "Password is correct: ";
-    var IncorrectText = "Error. Please, verify your information: ";
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
 
     function infoAgree() {
         if (validationEmail === true && validationPassword === true) {
-            alert(
-                emailCorrectText + emailInputElement.value + "\n" +
-                passwordCorrectText + passwordInputElement.value
-            );
+            fetch(url + '?email=' + emailInputElement.value + '&password=' + passwordInputElement.value)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (res) {
+                    if (res.succes) {
+                        window.alert(`${res.msg}
+                    ---information---
+                    Email: ${emailInputElement.value}
+                    Password: ${passwordInputElement.value}`);
+                    } else {
+                        window.alert(res.msg);
+                    }
+                })
+                .catch(function (err) {
+                    window.alert(err.errors[0].msg);
+                });
         } else {
-            alert(
-                IncorrectText + "\n" +
-                "Email: " + emailInputElement.value + "\n" +
-                "Password: " + passwordInputElement.value
-            );
+            window.alert("error");
         }
     }
     agreeLogin.onclick = function (e) {
@@ -81,7 +88,5 @@ document.addEventListener("DOMContentLoaded", function (event) {
         infoAgree();
     }
 });
-
-
 
 
