@@ -58,29 +58,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     /* Agree event */
     var agreeLogin = document.getElementById("agreelogin");
-    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/login';
+    var url = "https://basp-m2022-api-rest-server.herokuapp.com/login";
 
     function infoAgree() {
-        if (validationEmail === true && validationPassword === true) {
-            fetch(url + '?email=' + emailInputElement.value + '&password=' + passwordInputElement.value)
+        if (validationEmail === true &&
+            validationPassword === true) {
+            fetch(url +
+                "?email=" + emailInputElement.value +
+                "&password=" + passwordInputElement.value)
                 .then(function (response) {
                     return response.json();
                 })
                 .then(function (res) {
                     if (res.succes) {
-                        window.alert(`${res.msg}
-                    ---information---
-                    Email: ${emailInputElement.value}
-                    Password: ${passwordInputElement.value}`);
+                        alert("Email: " + emailInputElement.value +
+                            "Password: " + passwordInputElement.value);
                     } else {
-                        window.alert(res.msg);
+                        alert(res.msg);
                     }
                 })
                 .catch(function (err) {
-                    window.alert(err.errors[0].msg);
+                    alert(err.errors[0].msg);
                 });
         } else {
-            window.alert("error");
+            alert("error");
         }
     }
     agreeLogin.onclick = function (e) {

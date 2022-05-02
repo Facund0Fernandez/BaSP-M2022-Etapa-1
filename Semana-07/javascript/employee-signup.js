@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
-    var validation;
+
 
     /* Name validation */
     var nameInputElement = document.getElementById("fname");
     var alertName = document.getElementById("alert-fname");
     var alertMessageName = document.createTextNode("Insert a valid name format.");
+    var validationName;
 
     nameInputElement.onblur = function () {
         var numberSum = false;
@@ -16,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (nameInputElement.value.length > 3 && numberSum == false) {
             nameInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationName = true;
         } else {
             nameInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertName.appendChild(alertMessageName);
-            validation = false;
+            validationName = false;
         }
     }
     nameInputElement.onfocus = function () {
@@ -33,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var surnameInputElement = document.getElementById("surname");
     var alertSurname = document.getElementById("alert-surname");
     var alertMessageSurname = document.createTextNode("Insert a valid surname format.")
+    var validationSurname;
 
     surnameInputElement.onblur = function () {
         var numberSum = false;
@@ -43,11 +45,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (surnameInputElement.value.length > 3 && numberSum == false) {
             surnameInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationSurname = true;
         } else {
             surnameInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertSurname.appendChild(alertMessageSurname);
-            validation = false;
+            validationSurname = false;
         }
     }
     surnameInputElement.onfocus = function () {
@@ -60,15 +62,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var dniInputElement = document.getElementById("dni");
     var alertDNI = document.getElementById("alert-dni");
     var alertMessageDNI = document.createTextNode("Insert a valid DNI format.")
+    var validationDni;
 
     dniInputElement.onblur = function () {
         if (dniInputElement.value.length > 7 && isNaN(dniInputElement.value) == false) {
             dniInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationDni = true;
         } else {
             dniInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertDNI.appendChild(alertMessageDNI);
-            validation = false;
+            validationDni = false;
         }
     }
     dniInputElement.onfocus = function () {
@@ -81,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var dateInputElement = document.getElementById("date");
     var alertDate = document.getElementById("alert-date");
     var alertMessageDate = document.createTextNode("Insert a valid date format.")
+    var validationDate;
 
     dateInputElement.onblur = function () {
         var date = dateInputElement.value.replace(/[/]/g, '');
@@ -92,11 +96,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
         }
         if (slash == 2 && isNaN(date) == false) {
             dateInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationDate = true;
         } else {
             dateInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertDate.appendChild(alertMessageDate);
-            validation = false;
+            validationDate = false;
         }
     }
     dateInputElement.onfocus = function () {
@@ -109,15 +113,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var phoneInputElement = document.getElementById("phone");
     var alertPhone = document.getElementById("alert-phone");
     var alertMessagePhone = document.createTextNode("Insert a valid phone format.")
+    var validationPhone;
 
     phoneInputElement.onblur = function () {
         if (phoneInputElement.value.length == 10 && isNaN(phoneInputElement.value) == false) {
             phoneInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationPhone = true;
         } else {
             phoneInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertPhone.appendChild(alertMessagePhone);
-            validation = false;
+            validationPhone = false;
         }
     }
     phoneInputElement.onfocus = function () {
@@ -130,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var addressInputElement = document.getElementById("address");
     var alertAddress = document.getElementById("alert-address");
     var alertMessageAddress = document.createTextNode("Insert a valid address format.")
+    var validationAddress;
 
     addressInputElement.onblur = function () {
         var addressSpaces = addressInputElement.value.replaceAll(' ', '');
@@ -150,11 +156,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
             addressInputElement.value.indexOf(' ') < addressInputElement.value.length - 1 &&
             addressInputElement.value.length > addressInputElement.value.lastIndexOf(' ')) {
             addressInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationAddress = true;
         } else {
             addressInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertAddress.appendChild(alertMessageAddress);
-            validation = false;
+            validationAddress = false;
         }
     }
     addressInputElement.onfocus = function () {
@@ -167,15 +173,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var locationInputElement = document.getElementById("town");
     var alertLocation = document.getElementById("alert-town");
     var alertMessageLocation = document.createTextNode("Insert a valid town format.")
+    var validationLocation;
 
     locationInputElement.onblur = function () {
         if (locationInputElement.value.length > 3) {
             locationInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationLocation = true;
         } else {
             locationInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertLocation.appendChild(alertMessageLocation);
-            validation = false;
+            validationLocation = false;
         }
     }
     locationInputElement.onfocus = function () {
@@ -188,15 +195,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var codeInputElement = document.getElementById("pcode");
     var alertCode = document.getElementById("alert-pcode");
     var alertMessageCode = document.createTextNode("Insert a valid postal code format.")
+    var validationCode;
 
     codeInputElement.onblur = function () {
         if (codeInputElement.value.length >= 4 && codeInputElement.value.length <= 5 && isNaN(codeInputElement.value) == false) {
             codeInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationCode = true;
         } else {
             codeInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertCode.appendChild(alertMessageCode);
-            validation = false;
+            validationCode = false;
         }
     }
     codeInputElement.onfocus = function () {
@@ -265,15 +273,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var repPasswordInputElement = document.getElementById("reppassword");
     var alertRepPassword = document.getElementById("alert-reppassword");
     var alertMessageRepPassword = document.createTextNode("Insert a valid password format.");
+    var validationRepPassword;
 
     repPasswordInputElement.onblur = function () {
         if (passwordInputElement.value == repPasswordInputElement.value) {
             repPasswordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
-            validation = true;
+            validationRepPassword = true;
         } else {
             repPasswordInputElement.style = "border: solid 2px red; border-radius: 5px";
             alertRepPassword.appendChild(alertMessageRepPassword);
-            validation = false;
+            validationRepPassword = false;
         }
     }
     repPasswordInputElement.onfocus = function () {
@@ -284,22 +293,68 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     /* Agree event */
     var agreeSignup = document.getElementById("agreesignup");
-    var emailCorrectText = "Email is correct: ";
-    var passwordCorrectText = "Password is correct: ";
-    var IncorrectText = "Error. Please, verify your information: ";
+    var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
+
+    function localStorage() {
+        localStorage.setItem("name", nameInputElement.value);
+        localStorage.setItem("lastName", surnameInputElement.value);
+        localStorage.setItem("dni", dniInputElement.value);
+        localStorage.setItem("dob", dateInputElement.value);
+        localStorage.setItem("phone", phoneInputElement.value);
+        localStorage.setItem("address", addressInputElement.value);
+        localStorage.setItem("city", locationInputElement.value);
+        localStorage.setItem("zip", codeInputElement.value);
+        localStorage.setItem("email", emailInputElement.value);
+        localStorage.setItem("password", passwordInputElement.value);
+    }
 
     function infoAgree() {
-        if (validationEmail === true && validationPassword === true) {
-            alert(
-                emailCorrectText + emailInputElement.value + "\n" +
-                passwordCorrectText + passwordInputElement.value
-            );
+        if (validationName === true &&
+            validationSurname === true &&
+            validationDni === true &&
+            validationDate === true &&
+            validationAddress === true &&
+            validationLocation === true &&
+            validationPhone === true &&
+            validationCode === true &&
+            validationEmail === true &&
+            validationPassword === true) {
+            fetch(url +
+                "?name=" + nameInputElement.value +
+                "&lastName=" + surnameInputElement.value +
+                "&dni=" + dniInputElement.value +
+                "&dob=" + dateInputElement.value +
+                "&phone=" + phoneInputElement.value +
+                "&address=" + addressInputElement.value +
+                "&city=" + locationInputElement.value +
+                "&zip=" + codeInputElement.value +
+                "&email=" + emailInputElement.value +
+                "&password=" + passwordInputElement.value)
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (res) {
+                    if (res.succes) {
+                        localStorage();
+                        alert("Name: " + nameInputElement.value +
+                            "Last Name: " + surnameInputElement.value +
+                            "DNI: " + dniInputElement.value +
+                            "DoB: " + dateInputElement.value +
+                            "Phone: " + phoneInputElement.value +
+                            "&Address: " + addressInputElement.value +
+                            "City: " + locationInputElement.value +
+                            "Zip: " + codeInputElement.value +
+                            "Email: " + emailInputElement.value +
+                            "Password: " + passwordInputElement.value);
+                    } else {
+                        alert(res.msg);
+                    }
+                })
+                .catch(function (err) {
+                    alert(err.errors[0].msg);
+                });
         } else {
-            alert(
-                IncorrectText + "\n" +
-                "Email: " + emailInputElement.value + "\n" +
-                "Password: " + passwordInputElement.value
-            );
+            alert("error");
         }
     }
     agreeSignup.onclick = function (e) {
@@ -307,3 +362,36 @@ document.addEventListener("DOMContentLoaded", function (event) {
         infoAgree();
     }
 });
+
+
+
+
+
+
+
+
+
+
+// var agreeSignup = document.getElementById("agreesignup");
+// var emailCorrectText = "Email is correct: ";
+// var passwordCorrectText = "Password is correct: ";
+// var IncorrectText = "Error. Please, verify your information: ";
+
+// function infoAgree() {
+//     if (validationEmail === true && validationPassword === true) {
+//         alert(
+//             emailCorrectText + emailInputElement.value + "\n" +
+//             passwordCorrectText + passwordInputElement.value
+//         );
+//     } else {
+//         alert(
+//             IncorrectText + "\n" +
+//             "Email: " + emailInputElement.value + "\n" +
+//             "Password: " + passwordInputElement.value
+//         );
+//     }
+// }
+// agreeSignup.onclick = function (e) {
+//     e.preventDefault();
+//     infoAgree();
+// }
