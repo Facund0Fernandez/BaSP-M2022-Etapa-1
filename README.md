@@ -42,3 +42,7 @@ Weekly problem number 5 consisted on acquiring the bases of Javascript. For them
 ## Weekly problem 06
 
 The objective of this week was to add two screens (log in and sign up) to the work done in week 04 (landing page). For this we apply what we have learned in Javascript and we give dynamism to the screens. Everything can be seen in the following [link](https://facund0fernandez.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html).
+
+## Weekly problem 07
+
+Problem 7 consisted of sending the data loaded from the form (made in the previous week) to a server through a request, using the JS fetch method. It can be accessed through the following [link](https://facund0fernandez.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html).
