@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 letterSum = true;
             }
         }
-        if (passwordInputElement.value.length > 8 && numberSum == true && letterSum == true) {
+        if (passwordInputElement.value.length >= 8 && numberSum == true && letterSum == true) {
             passwordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
             validationPassword = true;
         } else {

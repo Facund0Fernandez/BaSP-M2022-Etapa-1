@@ -254,7 +254,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 letterSum = true;
             }
         }
-        if (passwordInputElement.value.length > 8 && numberSum == true && letterSum == true) {
+        if (passwordInputElement.value.length >= 8 && numberSum == true && letterSum == true) {
             passwordInputElement.style = "border: solid 2px  #48e525; border-radius: 5px";
             validationPassword = true;
         } else {
@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var agreeSignup = document.getElementById("agreesignup");
     var url = "https://basp-m2022-api-rest-server.herokuapp.com/signup";
 
-    function localStorage() {
+    function myStorage() {
         localStorage.setItem("name", nameInputElement.value);
         localStorage.setItem("lastName", surnameInputElement.value);
         localStorage.setItem("dni", dniInputElement.value);
@@ -335,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 })
                 .then(function (res) {
                     if (res.succes) {
-                        localStorage();
+                        myStorage();
                         alert("Name: " + nameInputElement.value +
                             "Last Name: " + surnameInputElement.value +
                             "DNI: " + dniInputElement.value +
