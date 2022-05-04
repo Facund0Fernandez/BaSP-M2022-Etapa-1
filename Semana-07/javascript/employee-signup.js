@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
-
-
     /* Name validation */
     var nameInputElement = document.getElementById("fname");
     var alertName = document.getElementById("alert-fname");
@@ -362,36 +360,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
         infoAgree();
     }
 });
-
-
-
-
-
-
-
-
-
-
-// var agreeSignup = document.getElementById("agreesignup");
-// var emailCorrectText = "Email is correct: ";
-// var passwordCorrectText = "Password is correct: ";
-// var IncorrectText = "Error. Please, verify your information: ";
-
-// function infoAgree() {
-//     if (validationEmail === true && validationPassword === true) {
-//         alert(
-//             emailCorrectText + emailInputElement.value + "\n" +
-//             passwordCorrectText + passwordInputElement.value
-//         );
-//     } else {
-//         alert(
-//             IncorrectText + "\n" +
-//             "Email: " + emailInputElement.value + "\n" +
-//             "Password: " + passwordInputElement.value
-//         );
-//     }
-// }
-// agreeSignup.onclick = function (e) {
-//     e.preventDefault();
-//     infoAgree();
-// }
